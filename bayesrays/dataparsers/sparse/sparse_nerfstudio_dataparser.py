@@ -1,5 +1,5 @@
 
-""" Same as nerfstudio dataparse but randomizes the split, rather than ordered 1/8 """
+""" Same as nerfstudio dataparse but uses CF-NeRF and NerfingMVS train/test splits for LF and ScanNet datasets """
 
 from __future__ import annotations
 
