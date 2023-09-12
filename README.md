@@ -116,3 +116,13 @@ ns-train nerfacto --vis viewer --data {PATH_TO_DATA} --experiment-name nerfbuste
 
 which is then passed to Nerfbusters pipeline to get baseline and Nerfbusters postprocessed models (Baseline model is just the same Nerfacto model trained for 5K longer).
 </details>
+
+### Citation
+```
+@article{goli2023,
+    title={{Bayes' Rays}: Uncertainty Quantification in Neural Radiance Fields},
+    author={Lily Goli, Cody Reading, Silvia Sellán, Alec Jacobson, Andrea Tagliasacchi},
+    journal={arXiv},
+    year={2023}
+}
+```
