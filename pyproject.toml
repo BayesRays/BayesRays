@@ -1,0 +1,25 @@
+[project]
+name = "bayesrays"
+version = "0.1"
+
+dependencies=[
+    "torch>=2.0.1",
+    "torchvision>=0.15.2",
+    "nerfstudio>=0.3.1",
+    "torchtyping>=0.1.4"
+]
+
+[tool.setuptools]
+packages = ["bayesrays"]
+
+[project.entry-points.'nerfstudio.dataparser_configs']
+nb-dataparser = 'bayesrays.dataparsers.nerfbusters.nerfbuster_config:nbDataparser'
+sparse-nerfstudio = 'bayesrays.dataparsers.sparse.sparse_nerfstudio_config:sparseNsDataparser'
+
+[project.scripts]
+# Note, add entrypoint name to nerfstudio/scripts/completions/install.py to include CLI completion
+ns-uncertainty = "bayesrays.scripts.uncertainty:entrypoint"
+ns-render-u = "bayesrays.scripts.render_uncertainty:entrypoint"
+ns-viewer-u = "bayesrays.scripts.viewer_uncertainty.run_viewer_u:entrypoint"
+ns-eval-u = "bayesrays.scripts.eval_uncertainty:entrypoint"
+
