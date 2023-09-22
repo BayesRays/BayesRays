@@ -21,7 +21,7 @@ For experiments on clean-up task and comparing with [Nerfbusters](https://github
 
 ### Running
 
-First train a NeRF model using `ns-train` command in Nerfstudio. Currently our code only has support for Nerfacto, instant-NGP and Mip-NeRF models. Here is the demo example on the 'Loader Truck' scene. Download the dataset from [here](https://drive.google.com/file/d/1XbK5RAuYKsCG4Ub_YhwPxG7eSH_0MqP6/view?usp=sharing).
+First train a NeRF model using `ns-train` command in Nerfstudio. Currently our code only has support for Nerfacto, instant-NGP and Mip-NeRF models. Here is the demo example on the 'Loader Truck' scene. Download the dataset from [here](https://drive.google.com/file/d/1ZVjiVAQM7VhngGloi_5FdFy4MwKR8SzL/view?usp=sharing).
 
 1) Train a Nerfacto model normally:
 ```
