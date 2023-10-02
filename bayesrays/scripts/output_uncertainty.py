@@ -66,8 +66,8 @@ def get_output_nerfacto_new(self, ray_bundle):
     uncertainty += (1-torch.sum(weights,dim=-2)) * min_uncertainty #alpha blending
     
     #normalize into acceptable range for rendering
-    uncertainty = torch.clip(uncertainty, min_uncertainty, 5)
-    uncertainty = (uncertainty-min_uncertainty)/(5-min_uncertainty)
+    uncertainty = torch.clip(uncertainty, min_uncertainty, max_uncertainty)
+    uncertainty = (uncertainty-min_uncertainty)/(max_uncertainty-min_uncertainty)
     
     if self.white_bg:
         self.renderer_rgb.background_color=colors.WHITE 
