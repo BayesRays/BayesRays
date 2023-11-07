@@ -56,7 +56,7 @@ For the 'Loader Truck' scene, `{PATH_TO_CAMERA_PATH}` is inclued as `camera_path
 Note that `ns-render-u` is a modified version of `ns-render` command in Nerfstudio and works with the same options. However it additionally takes `--unc_path` option as the path to the extracted uncertainty `.npy` file.  If the option `--filter-out True` is set and the threshold `--filter-thresh` is set to a value less than 1, then the clean-up task is performed with the given threshold. With `--white-bg` and `--black-bg` control the color of rendered empty parts after clean-up.
 
 ### Uncertainty Evaluation
-The uncertainity evaluation is done on the Light Field (LF) dataset and ScanNet Scenes by correlating depth error with uncertainity, computing via the AUSE metric.
+The uncertainty evaluation is done on the Light Field (LF) dataset and ScanNet Scenes by correlating depth error with uncertainty, computing via the AUSE metric.
 
 For Light Field (LF) dataset download the data [here](https://drive.google.com/file/d/1U-Hly00DmqtAIGaPkF-Eu_B_q0Frsbh1/view?usp=sharing) and for ScanNet scenes use the data [here](https://drive.google.com/file/d/17j0l6vD1YLY0F9ghWDszyCuiZkuoyWvS/view?usp=sharing). Note that these folders contain the ground truth depth files for test views, alongside the approximate scale in `scale_parameters.txt`. The scale parameter is computed using `utils/scale_solver.py` and is used for the purpose of evaluation to solve the scale ambiguity of NeRF for depth comparison with GT depth. To run `scale_solver.py` on another scene or to verify the provided scales, you need to have the sparse COLMAP generated point cloud and the ground truth depthmaps then you can run the script as:
 
