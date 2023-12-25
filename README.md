@@ -121,7 +121,7 @@ which is then passed to Nerfbusters pipeline to get baseline and Nerfbusters pos
 ```
 @article{goli2023,
     title={{Bayes' Rays}: Uncertainty Quantification in Neural Radiance Fields},
-    author={Lily Goli, Cody Reading, Silvia Sellán, Alec Jacobson, Andrea Tagliasacchi},
+    author={Goli, Lily and Reading, Cody and Sellán, Silvia and Jacobson, Alec and Tagliasacchi, Andrea},
     journal={arXiv},
     year={2023}
 }
