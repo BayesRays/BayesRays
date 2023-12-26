@@ -3,13 +3,13 @@
 <img src="https://github.com/BayesRays/bayesrays.github.io/raw/main/video/demo1.gif" height=400>
 
 ### Installation
-Bayes' Rays is built on top of [Nerfstudio](https://docs.nerf.studio/en/latest/).
-After cloning Bayes' Rays repository, install Nerfstudio as a package by following the installation guide on [Nerfstudio installation page](https://docs.nerf.studio/en/latest/quickstart/installation.html)
+Bayes' Rays is built on top of [Nerfstudio](https://docs.nerf.studio/).
+After cloning Bayes' Rays repository, install Nerfstudio as a package by following the installation guide on [Nerfstudio installation page](https://docs.nerf.studio/quickstart/installation.html)
 
 Specifically, perform the following steps
-1. [Create environment](https://docs.nerf.studio/en/latest/quickstart/installation.html#create-environment)
-2. [Dependencies](https://docs.nerf.studio/en/latest/quickstart/installation.html#dependencies)
-3. [Installing nerfstudio](https://docs.nerf.studio/en/latest/quickstart/installation.html#installing-nerfstudio). Follow the **From pip** guidelines, no need to clone Nerfstudio.
+1. [Create environment](https://docs.nerf.studio/quickstart/installation.html#create-environment)
+2. [Dependencies](https://docs.nerf.studio/quickstart/installation.html#dependencies)
+3. [Installing nerfstudio](https://docs.nerf.studio/quickstart/installation.html#installing-nerfstudio). Follow the **From pip** guidelines, no need to clone Nerfstudio.
 
 
 Then install Bayes' Rays as a package using `pip install -e .`
