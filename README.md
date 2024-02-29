@@ -32,7 +32,7 @@ Note in this example we use `nb-dataparser` (instead of the usual `nerfstudio-da
 2) Then extract uncertainty:
 
 ```
-ns-uncertainty --load-config={PATH_TO_CONFIG} --output-path={PATH_TO_UNCERTAINTY} --lod 8
+ns-uncertainty --load-config {PATH_TO_CONFIG} --output-path {PATH_TO_UNCERTAINTY} --lod 8
 ```
 Note `{PATH_TO_UNCERTAINTY}` must be a path to `.npy` file and 2^`lod` denotes the uncertainty grid length (i.e. the grid length in the example above is 256).
 
